@@ -2,12 +2,13 @@ const express=require('express')
 
 const cors=require('cors')
 
+const {postRouter}=require('./routes/Post.routes')
 const { userRouter } = require('./routes/User.routes')
 
 const { connection } = require('./config/db')
 
 const { authenticate } = require('./middlewares/Authentication.middleware')
-const { postRouter } = require('./routes/Post.routes')
+
 
 
 const app=express()
